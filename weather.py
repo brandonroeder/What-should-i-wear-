@@ -93,7 +93,7 @@ Coded entirely in Python using wxPython and the Wunderground API.
         elif temp_f>120: display="You are dead. sorry"
 
     	wx.StaticText(self.panel, -1, display, pos=(10, 40))
-        wx.StaticText(self.panel, -1, "Forecast: ", pos=(10, 60))
+        wx.StaticText(self.panel, -1, "Currently: " + icon, pos=(10, 60))
         
         #hacked together way to use the custom icons that Wunderground provides
         first = "http://icons.wxug.com/i/c/j/"
